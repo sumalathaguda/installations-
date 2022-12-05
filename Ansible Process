@@ -1,0 +1,10 @@
+take minimum two instance (one for master & anothe for node)
+get ready with your instance i.e (1. sudo -i... cd ../, apt update command on both the instances)
+go to website (https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu) here copy the command for installation i.e
+
+[$ sudo apt update
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository --yes --update ppa:ansible/ansible
+$ sudo apt install ansible ]
+
+above steps must be done for both the instacne 
