@@ -1,0 +1,24 @@
+---
+ - hosts: agent                                                                                                                                                            tasks:                                                                                                                                                                    - name: install java11openjdk
+       apt:
+         name: openjdk-11-jdk
+         state: present
+         update_cache: true
+     - name: update repo
+       apt: update_cache=true
+
+     - name: ensure the jenkins apt repo
+       apt_key: url=https://pkg.jenkins.io/debian/jenkins.io.key state=present
+
+     - name: enusre repo is conf
+       apt_repository: repo='deb https://pkg.jenkins.io/debian-stable binary/' state=present
+
+     - name: ensure jenkins is installed
+       apt:
+         name: jenkins started
+         state: latest
+         update_cache: true
+      - name: ensure jenkins runing
+        service: name=jenkins state= started
+         
+                                               
