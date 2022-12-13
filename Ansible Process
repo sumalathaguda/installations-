@@ -18,7 +18,8 @@ vi /etc/hosts ( add agent private ID @ agent name ) this should be done in maste
 
 next step
 
-create a ssh public key generation from master ( copy it to agent , Make sure that key is correctly copied in authorized key)
+create a ssh public key (ssh-keygen -t rsa) generation from master ( copy it to agent , Make sure that key is correctly copied in authorized key[ cd root/.ssh/ here we can find authorized key])
+
 
 next step
  
